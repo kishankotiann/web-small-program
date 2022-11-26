@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head><title>Para Stack</title>
+<script type="text/javascript">
+top_para='fourth';
+function jump_to_top(id)
+{
+old_top=document.getElementById(top_para);
+new_top=document.getElementById(id);
+old_top.style.zIndex=1;
+new_top.style.zIndex=4;
+top_para=id;
+}
+</script>
+<style type="text/css">
+#first {
+               position:absolute;
+               left:300px;
+               top:100px;
+               width:500px;
+               height:300px;
+               background-color:red;
+               color:white;
+               border-style:solid;
+               border-width:5px;
+               border-color:black;
+               font-size:18px;
+               z-index:1;
+              }
+#second {
+                position:absolute;
+               left:350px;
+               top:150px;
+               width:500px;
+               height:300px;
+               background-color:yellow;
+               color:blue;
+               border-style:solid;
+               border-width:5px;
+               border-color:black;
+               font-size:18px;
+               z-index:1;
+              }
+#third {
+                position:absolute;
+               left:400px;
+               top:200px;
+               width:500px;
+               height:300px;
+               background-color:green;
+               color:yellow;
+               border-style:solid;
+               border-width:5px;
+               border-color:black;
+               font-size:18px;
+               z-index:1;
+              }
+#fourth {
+                position:absolute;
+               left:450px;
+               top:250px;
+               width:500px;
+               height:300px;
+               background-color:blue;
+               color:orange;
+               border-style:solid;
+               border-width:5px;
+               border-color:black;
+               font-size:18px;
+               z-index:1;
+              }
+</style>
+</head>
+<body>
+<p id="first" onclick="jump_to_top(id);">
+An adage goes this way – “A sound mind in a sound body”.  It stresses the importance of having a healthy body or physique. No matter how intelligent you are, you will be able to put it to good use only if you are healthy. Poor health takes away much effort, money and other resources which otherwise could be utilized for other endeavors in life. Present day lifestyle places much load on our minds and is yet very sedentary necessitating some sort of physical exercise or activity to stay fit and healthy. In this attempt to stay healthy, cycling comes as a very good alternative. Every other exercise regime like running, walking or weight training has impact on the joints and thus has higher risk of injury. Cycling and swimming are low impact workouts which can be incorporated by people of any age group, provided they have the requisite skill or balance.
+</p>
+<p id="second" onclick="jump_to_top(id);">
+Bicycle, the most popular, loved and common among human powered vehicles, has come a long way from the earliest wooden ‘running machine’ to the present day carbon-fiber tri bikes. The first bicycle had a wooden frame on which a person could straddle and walk or run. It had a steerable front wheel and a rear wheel. Pedal powered bicycles came next with pedals attached to the front wheel. They were heavy and the only option to increase the speed was to make the driving front wheel large in diameter. The ‘Penny Farthing’ was the result. These bicycles had huge front wheel (1.5 mts diameter) and lacked safety as the rider was seated very high above the ground. This problem was solved with the advent of chain driven bicycles in which the rear wheel was powered by the rider using a chain drive. The pedal was attached to a crank-set instead of front wheels.
+</p>
+<p id="third" onclick="jump_to_top(id);">
+Cycling being a low impact workout targets the cardiovascular system and increases the capacity and health of our hearts, strengthens muscles and bones, increases endurance and helps in burning excess fat.Besides the health benefit, the rider enjoys open fresh air and the scenery around which otherwise he/she passes while on a motorized vehicle. This reduces stress and rejuvenates mind and body. Rider gets to feel the road/track which is not possible in any other mode of transport.On a subtler level, it also teaches you humility; importance for traffic rules and develops a whole new level of respect for speed.
+</p>
+<p id="fourth" onclick="jump_to_top(id);">
+One can also take cycling as a sport. Bicycle sporting events take place either out on open roads, hills, specially laid out courses or indoors in a stadium called velodromes for track events.Road racing includes competitive events such as open road races; criterium – certain number of laps to be completed on a said route; time trials, both individual and team, where riders race against the clock and are given individual starts and different track races.Cycling sports also include long distance events such as ‘Brevets’ where long distances like 200kms, 300kms, 600kms and 1200kms must be completed by riders within specified time limits being self reliant. There is no first or second places awarded but every rider who completes the ride within the time limit is called a Randonneur. Major cycling events include Olympics (track), Tour-de-France (road and time trial), Paris-Brest-Paris (Randonneuring) etc.
+</p>
+</body>
+</html>
