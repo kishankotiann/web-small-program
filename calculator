@@ -1,0 +1,122 @@
+<html>
+<head><title>Calculator</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+
+<script type='text/javascript'>
+      function clr()
+            {
+              document.getElementById('disp').value=' ';
+               }
+
+      function display(id)
+            {
+              document.getElementById('disp').value+=document.getElementById(id).value;
+               }
+
+      function calc()
+            {
+              res=eval(document.getElementById('disp').value);
+              document.getElementById('disp').value=res;
+               }
+</script>
+
+<style>
+ 
+  body {
+  font-family: "Sofia", sans-serif;
+    }
+
+
+   *:hover {background-color: black;}  
+
+   table td, th{
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+  
+        input[type="button"] {
+            width: 100%;
+            padding: 20px 40px;
+            background-color: lightblue;
+            color: black;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+  
+        input[type="text"] {
+            padding: 20px 30px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+
+
+</style>
+</head>
+
+<body>
+
+<h1><center>Calculator</center><h1>
+
+<center>
+ 
+<table border=5>
+
+<tr>
+   <td colspan=4><input type='text' id='disp' value=' ' /></td>
+</tr>
+
+<tr>
+   <td><input type='button' id='svn' value=7 onclick='display(id)' /> </td>
+
+   <td><input type='button' id='et' value=8 onclick='display(id)' /> </td>
+
+   <td><input type='button' id='nin' value=9 onclick='display(id)' /> </td>
+
+   <td><input type='button' id='add' value='+' onclick='display(id)' /> </td>
+
+</tr>
+
+<tr>
+   <td><input type='button' id='fr' value=4 onclick='display(id)' /> </td>
+
+   <td><input type='button' id='fv' value=5 onclick='display(id)' /> </td>
+
+   <td><input type='button' id='sx' value=6 onclick='display(id)' /> </td>
+
+   <td><input type='button' id='sub' value='-' onclick='display(id)' /> </td>
+
+</tr>
+
+<tr>
+   <td><input type='button' id='on' value=1 onclick='display(id)' /> </td>
+
+   <td><input type='button' id='tw' value=2 onclick='display(id)' /> </td>
+
+   <td><input type='button' id='tr' value=3 onclick='display(id)' /> </td>
+
+   <td><input type='button' id='ml' value='*' onclick='display(id)' /> </td>
+
+</tr>
+
+<tr>
+   <td><input type='button' id='clr' value='c' onclick='clr()' /> </td>
+
+   <td><input type='button' id='zr' value=0 onclick='display(id)' /> </td>
+
+   <td><input type='button' id='eq' value='=' onclick='calc()' /> </td>
+
+   <td><input type='button' id='division' value='/' onclick='display(id)' /> </td>
+
+</tr>
+</table>
+
+</center>
+
+</body>
+</html>
