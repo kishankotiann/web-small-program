@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>changing position of an Image</title>
+<script>
+
+function move_img(str) {
+var step=50; 
+switch(str){
+case "down":
+var x=document.getElementById('i1').offsetTop;
+x= x + step;
+document.getElementById('i1').style.top= x + "px";
+break;
+
+case "up":
+var x=document.getElementById('i1').offsetTop;
+x= x -step;
+document.getElementById('i1').style.top= x + "px";
+break;
+
+case "left":
+var y=document.getElementById('i1').offsetLeft;
+y= y - step;
+document.getElementById('i1').style.left= y + "px";
+break;
+
+case "right":
+var y=document.getElementById('i1').offsetLeft;
+y= y + step;
+document.getElementById('i1').style.left= y + "px";
+break;
+}
+}
+
+</script>
+<style>
+
+.button {
+  background-color: #4CAF50;
+  border-radius: 12px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #4CAF50;
+  color: red;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+
+</style>
+
+
+</head>
+<body>
+<img src="k.jpg" height=350 width=40 id='i1' 
+  style="position:absolute; left: 500; top: 100;">
+
+<br>
+<br>
+<br>
+<br>
+<input type=button class="button" onClick=move_img('up') value='Up'>
+<br>
+<input type=button class="button" onClick=move_img('left') value='Left'>
+<input type=button class="button" onClick=move_img('right') value='right'>
+
+<input type=button class="button" onClick=move_img('down') value='down'>
+</body>
+</html>
